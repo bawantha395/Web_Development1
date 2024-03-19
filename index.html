@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+    }
+    header {
+        background: #333;
+        color: white;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #50b3a2 3px solid;
+    }
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    header ul {
+        padding: 0;
+        list-style: none;
+    }
+    header li {
+        display: inline;
+        margin: 0 20px;
+    }
+    header #branding {
+        float: left;
+    }
+    header #branding h1 {
+        margin: 0;
+        font-weight: 300;
+    }
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    header .highlight, header .current a {
+        color: #50b3a2;
+        font-weight: bold;
+    }
+    header a:hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    .fadeIn {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    .slideIn {
+        animation: slideIn 1s ease-out;
+    }
+    @media(max-width: 768px) {
+        header #branding,
+        header nav {
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+        header nav ul {
+            margin-top: 0;
+        }
+        header li {
+            display: block;
+            margin: 5px 0;
+        }
+    }
+    footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    footer a {
+        color: #50b3a2;
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* Added CSS for web projects */
+    #web-projects {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .project {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+        width: 150px; /* Decreased width */
+        text-align: center;
+    }
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Bawantha Rathnayake</span> Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="showcase">
+    <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a simple web page with HTML, CSS, and JavaScript showcasing my work and skills.</p>
+    </div>
+</section>
+
+<section id="web-projects" class="slideIn">
+    <div class="container">
+        <h2>Web Development Projects</h2>
+        <div class="project">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUSpGuSi5XjLSi3tE5Jtgnkwd8Ye0Q0Zy43EAMFcwZQ&s" alt="Web Project 1">
+            <h3>Project 1</h3>
+            
+        </div>
+        <div class="project">
+            <img src="https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D" alt="Web Project 2">
+            <h3>Project 2</h3>
+            
+        </div>
+        <div class="project">
+            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Web Project 3">
+            <h3>Project 3</h3>
+            
+        </div>
+        <div class="project">
+            <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?cs=srgb&dl=pexels-fauxels-3182773.jpg&fm=jpg" alt="Web Project 4">
+            <h3>Project 4</h3>
+            
+        </div>
+        <div class="project">
+            <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?cs=srgb&dl=pexels-christina-morillo-1181467.jpg&fm=jpg" alt="Web Project 5">
+            <h3>Project 5</h3>
+            
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <table border="1">
+            <tr>
+                <th>Year</th>
+                <th>Company</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>2020-2023</td>
+                <td>Awesome Web Designs</td>
+                <td>Front-end Developer</td>
+            </tr>
+            <tr>
+                <td>2018-2020</td>
+                <td>Creative Solutions</td>
+                <td>Graphic Designer</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Click the button to get my contact email.</p>
+        <button onclick="displayEmail()">Get Email</button>
+        <p id="email"></p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Connect with me on social media</p>
+        <a href="https://www.linkedin.com">LinkedIn</a> |
+        <a href="https://www.github.com">GitHub</a> |
+        <a href="https://www.twitter.com">Twitter</a> |
+        <a href="https://www.facebook.com">Facebook</a> |
+        <a href="https://www.instagram.com">Instagram</a>
+    </div>
+</footer>
+
+<script>
+function displayEmail() {
+    document.getElementById("email").innerText = "contact@example.com";
+}
+</script>
+</body>
+</html>
